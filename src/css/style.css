@@ -1479,7 +1479,7 @@ ul {
 .accordion.active {
   transition: 0.3s;
 }
-.accordion.active .accordion__title-img {
+.accordion.active .accordion-text-box__img {
   transform: rotate(-180deg);
 }
 .accordion:hover {
