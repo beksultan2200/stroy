@@ -1,0 +1,91 @@
+.footer {
+    background: #2F323A;
+    padding: 40px 0 20px;
+
+    &-col {
+        gap: 0;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+
+        &-text-box {
+            margin-top: 22px;
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+
+            &__a {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-family: 'Manrope' sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                /* identical to box height, or 24px */
+
+
+                /* BG/E8E9EA */
+
+                color: #E8E9EA;
+                transition: .5s;
+
+                &:hover {
+                    padding-left: 20px;
+                    background: url(../img/footer/right-white.png) left center/16px no-repeat;
+                    color: #E8E9EA;
+                }
+
+            }
+
+            &:nth-child(1) {
+                gap: 12px;
+                margin-top: 0;
+                justify-content: center;
+            }
+
+        }
+
+        &__img {
+            object-fit: none;
+        }
+    }
+
+
+    &-bottom {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        border-top: 1px solid #5D6066;
+
+        &-imgs {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            &__img {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+
+        &__p {
+            font-family: 'Manrope' sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            /* identical to box height, or 24px */
+
+
+            /* BG/D1D1D3 */
+
+            color: #D1D1D3;
+
+        }
+    }
+}

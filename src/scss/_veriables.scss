@@ -1,0 +1,19 @@
+@mixin cart_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    /* Text/2F323A */
+
+    color: #2F323A;
+    margin-bottom: 12px;
+    min-height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StroykaStore</title>
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="" class="header-top__link" id="open-city-popup">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.5 8.33333C17.5 14.1667 10 19.1667 10 19.1667C10 19.1667 2.5 14.1667 2.5 8.33333C2.5 6.34421 3.29018 4.43655 4.6967 3.03003C6.10322 1.62351 8.01088 0.833333 10 0.833333C11.9891 0.833333 13.8968 1.62351 15.3033 3.03003C16.7098 4.43655 17.5 6.34421 17.5 8.33333Z"
+                                    stroke="#5D6066" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M10 10.8333C11.3807 10.8333 12.5 9.71405 12.5 8.33333C12.5 6.95262 11.3807 5.83333 10 5.83333C8.61929 5.83333 7.5 6.95262 7.5 8.33333C7.5 9.71405 8.61929 10.8333 10 10.8333Z"
+                                    stroke="#5D6066" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Москва
+                        </a>
+                        <div class="d-flex header-top__menu">
+                            <a href="" class="header-top__link">Бренды</a>
+                            <a href="../delivery/index.html" class="header-top__link">Доставка</a>
+                            <a href="" class="header-top__link">Возврат</a>
+                            <a href="" class="header-top__link">Документация</a>
+                            <a href="#" class="header-top__link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <a href="../../../index.html" class="header-middle__logo">
+                            <img src="../../img/header/logo.png" alt="">
+                        </a>
+                        <div class="d-flex align-items-center header-middle__common">
+                            <a href="" class=" header-middle__catalog">
+                                <svg class="header-middle__catalog-svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="header-middle__catalog-svg" d="M4.5 18L14.5 18" stroke="#2F323A"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="header-middle__catalog-svg" d="M4.5 12L20.5 12" stroke="#2F323A"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="header-middle__catalog-svg" d="M4.5 6L10.5 6" stroke="#2F323A"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Каталог
+                            </a>
+
+
+
+                            <form class="header-middle__form">
+                                <input class="header-middle__form-input" placeholder="Поиск" type="text">
+                                <button class="header-middle__form-btn" type="submit">
+                                    <img src="../../img/header/search.png" alt="">
+                                </button>
+                            </form>
+                            <div class="header-middle__profile">
+                                <a class="header-middle__profile-icon" id="open-login-popup" href="">
+                                    <img src="../../../src/img/header/user.png" alt="">
+                                    Профиль
+                                </a>
+                                <a class="header-middle__profile-icon" href="">
+                                    <img src="../../../src/img/header/order.png" alt="">
+                                    Заказы
+                                </a>
+                                <a class="header-middle__profile-icon" href="">
+                                    <img src="../../../src/img/header/cart.png" alt="">
+                                    Корзина
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="d-flex justify-content-between header-bottom__nav">
+                        <a href="" class="header-bottom__link">Акции</a>
+                        <a href="" class="header-bottom__link">Строительные материалы</a>
+                        <a href="" class="header-bottom__link">Керамическая плитка</a>
+                        <a href="" class="header-bottom__link">Краски</a>
+                        <a href="" class="header-bottom__link">Сантехника</a>
+                        <a href="" class="header-bottom__link">Напольные покрытия</a>
+                        <a href="" class="header-bottom__link">Инструменты</a>
+                        <a href="" class="header-bottom__link">Обои</a>
+                        <a href="" class="header-bottom__link">Окна</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="burger-menu">
+                            <span class="burger-menu__line"></span>
+                        </div>
+
+                        <a href="../../../index.html" class="header-top__logo">
+                            <img src="../../img/header/logo.png" alt="">
+                        </a>
+
+                        <a class="header-top__profile-icon" href="">
+                            <img src="../../img/header/cart.png" alt="">
+                        </a>
+                        <form class="header-top__form">
+                            <input class="header-top__form-input" placeholder="Поиск" type="text">
+                            <button class="header-top__form-btn" type="submit">
+                                <img src="../../img/header/search.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <a href="">Акции</a>
+                <a href="">Строительные материалы</a>
+                <a href="">Керамическая плитка</a>
+                <a href="">Краски</a>
+                <a href="">Сантехника</a>
+                <a href="">Напольные покрытия</a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="contact-main">
+        <section class="contact">
+            <div class="container">
+                <div class="contact-title">
+                    <div style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../../../index.html">Главная</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Контакты</li>
+                        </ol>
+                    </div>
+                    <h2 class="contact-title__h2">Контакты</h2>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A485dfd2f5474448e33bfe28e756d8677d7c58c56f2e8fbdef85029c42c2916e4&amp;source=constructor"
+                        width="100%" height="340" frameborder="0"></iframe>
+                </div>
+
+                <div class="contact-description">
+                    <h2 class="contact-description__h2">ООО «СтройкаСтор»</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="contact-description__p">
+                                115114, г. Москва, Дербеневская <br>
+                                набережная, д. 7, стр. 8 <br>
+                                <span class="contact-description__p-span"></span>
+                                Павелецкая <br>
+                                Автобусы 13, 106, 158, 184, 632 <br>
+                                Остановка «Дербеневская наб., д. 7»</p>
+                        </div>
+                        <div class="col-5">
+                            <p class="contact-description__p">
+                                ОГРН: 1047796688554 <br>
+                                ИНН 7703528301 <br>
+                                КПП 774850001 <br>
+                                ОКТМО 45380000 <br>
+                                ОГРН 1047796688554 <br>
+                                Расчетный рублевый счет: 40702810900001403352 <br>
+                                Банк: АО «Сбербанк» г. Москва <br>
+                                Корреспондентский счет: 30101810200000000700 <br>
+                                БИК: 044525700</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="contact-description__p">
+                                Поддержка клиентов <br>
+                                info@stroykastore.ru
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <!-- <div class="container"> -->
+            <div class="about-block">
+                <img src="../../img/about/img1.png" alt="" class="about-block__img">
+                <div class="about-block-text-box">
+                    <h2 class="about-block-text-box__h2">О компании</h2>
+                    <p class="about-block-text-box__p">В СтройкаСтор вы всегда можете купить все необходимые товары
+                        для ремонта дома <br> и дачи. Хотите сделать ремонт в квартире? Строите загородный дом?
+                        Используйте <br> строительные и отделочные материалы из нашего каталога. </p>
+                    <span class="about-block-text-box__span"></span>
+                    <p class="about-block-text-box__p"> Быстрая доставка строительных товаров по низким ценам
+                        сделает ваши покупки более <br> приятными. Ремонт может стоить дешево, если делать его с
+                        нами.
+                        Для вас всегда в <br> наличии более 30 000 товаров для строительства по низким ценам каждый
+                        день. <br>
+                        СтройкаСтор — это широкий ассортимент товаров для дома и ремонта недорого; <br> Возможность
+                        заказать строительные и отделочные материалы для дома и дачи.</p>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="footer-col">
+                        <img src="../../img/footer/logo.png" alt="" class="footer-col__img">
+                        <div class="footer-col-text-box">
+                            <a href="" class="footer-col-text-box__a"><i
+                                    class="fa-regular fa-envelope"></i>info@stroykastore.ru
+                            </a>
+                            <a href="" class="footer-col-text-box__a"><i class="fa-solid fa-location-dot"></i>Москва,
+                                ул.
+                                Камушкина 10</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-col">
+                        <div class="footer-col-text-box">
+                            <a href="" class="footer-col-text-box__a">Личный кабинет</a>
+                            <a href="" class="footer-col-text-box__a">Заказы</a>
+                            <a href="" class="footer-col-text-box__a">Избранное</a>
+                            <a href="" class="footer-col-text-box__a">Корзина</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-col">
+                        <div class="footer-col-text-box">
+                            <a href="" class="footer-col-text-box__a">Каталог</a>
+                            <a href="" class="footer-col-text-box__a">Акции</a>
+                            <a href="" class="footer-col-text-box__a">Бренды</a>
+                            <a href="" class="footer-col-text-box__a">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-col">
+                        <div class="footer-col-text-box">
+                            <a href="" class="footer-col-text-box__a">Стать продавцом</a>
+                            <a href="" class="footer-col-text-box__a">Доставка</a>
+                            <a href="" class="footer-col-text-box__a">Возврат</a>
+                            <a href="" class="footer-col-text-box__a">Документация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__p">© СтройкаСтор</p>
+                <div class="footer-bottom-imgs">
+                    <img src="./src/img/footer/cart1.png" alt="" class="footer-bottom-imgs__img">
+                    <img src="./src/img/footer/cart2.png" alt="" class="footer-bottom-imgs__img">
+                    <img src="./src/img/footer/cart3.png" alt="" class="footer-bottom-imgs__img">
+                    <img src="./src/img/footer/cart4.png" alt="" class="footer-bottom-imgs__img">
+                </div>
+                <p class="footer-bottom__p">Cделано в KRUGLOV STUDIO</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="login-popup">
+            <form action="" class="login-popup-form">
+                <h2 class="login-popup-form__h2">Вход</h2>
+                <label class="login-popup-form__label">
+                    E-mail <input type="email" class="login-popup-form__label-input" placeholder="youmail@mail.com">
+                </label>
+                <label class="login-popup-form__label">
+                    Пароль <input type="password" class="login-popup-form__label-input" placeholder="****************">
+                </label>
+                <a href="" class="login-popup-form__a">Забыли пароль?</a>
+                <button class="login-popup-form__login">Войти</button>
+            </form>
+
+            <button class="login-popup__reg">Создать учётную запись</button>
+
+        </div>
+        <div class="reg-popup">
+            <form action="" class="reg-popup-form">
+                <h2 class="reg-popup-form__h2">Регистрация</h2>
+                <div class="reg-popup-form-block">
+                    <label class="reg-popup-form-block__label">
+                        Имя <input type="text" class="reg-popup-form-block__label-input" placeholder="Богдан">
+                    </label>
+                    <label class="reg-popup-form-block__label">
+                        E-mail <input type="email" class="reg-popup-form-block__label-input"
+                            placeholder="youmail@mail.com">
+                    </label>
+                </div>
+                <div class="reg-popup-form-block">
+                    <label class="reg-popup-form-block__label">
+                        Новый пароль <input type="password" class="reg-popup-form-block__label-input"
+                            placeholder="****************">
+                    </label>
+                    <label class="reg-popup-form-block__label">
+                        Подтверждение пароля <input type="password" class="reg-popup-form-block__label-input"
+                            placeholder="****************">
+                    </label>
+                </div>
+                <button class="reg-popup-form__btn">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="city-popup">
+            <h2 class="city-popup__h2">Выберите ваш город</h2>
+            <form action="" class="city-popup-form">
+                <label class="city-popup-form-label">
+                    <input type="text" class="city-popup-form-label__input" placeholder="Поиск">
+                    <button class="city-popup-form-label__btn"><img src="./src/img/header/search.png" alt=""></button>
+                </label>
+
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="city-popup-form-col-text-box">
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Москва</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Екатеринбург</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Челябинск</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Челябинск</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Воронеж</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="city-popup-form-col-text-box">
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Санкт-Петербург</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Казань</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Самара</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Омск</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Пермь</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="city-popup-form-col-text-box">
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Новосибирск</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Нижний Новгород</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Ростов-на-Дону</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Красноярск</a>
+                            <a href="" class="city-popup-form-col-text-box__a"><i
+                                    class="fa-solid fa-arrow-right"></i>Волгоград</a>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="cart-alert">
+            <h2 class="cart-alert__h2">Товар добавлен в корзину</h2>
+            <div class="cart-alert-cart">
+                <img class="cart-alert-cart__img" src="./src/img/discount/img1.png" alt="">
+                <div class="cart-alert-cart-text-box">
+                    <p class="cart-alert-cart-text-box__p">Плита OSB-3 Kronospan 2500 х 1250 х 9 мм, хвойные породы</p>
+                    <p class="cart-alert-cart-text-box__p">995 ₽</p>
+                    <p class="cart-alert-cart-text-box__p">2 шт.</p>
+                </div>
+            </div>
+            <div class="cart-alert-btns">
+                <button class="cart-alert-btns__btn">Перейти в корзину</button>
+                <button class="cart-alert-btns__btn" id="cart-alert__close">Продолжить покупки</button>
+            </div>
+        </div>
+        <div class="error-popup">
+            <h2 class="error-popup__h2">Ошибка</h2>
+            <p class="error-popup__p">Проблема с оплатой. Обратитесь <br> за помощью к менеджеру</p>
+            <button class="error-popup__btn" id="error-popup__close">Вернуться в магазин</button>
+        </div>
+        <div class="order-alert">
+            <h2 class="order-alert__h2">Спасибо за заказ!</h2>
+            <p class="order-alert__p">Скоро с Вами свяжется наш менеджер!</p>
+            <button class="order-alert__btn" id="order-alert__close">Вернуться в магазин</button>
+        </div>
+        <div class="popup-close-btn"></div>
+    </div>
+</body>
+<script src="../../libs/jquery/jquery.min.js"></script>
+<script src="../../libs/fa/all.min.js"></script>
+<script src="../../js/script.js"></script>
+<script src="./conatct.js"></script>
+
+
+</html>

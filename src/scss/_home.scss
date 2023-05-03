@@ -1,0 +1,89 @@
+.home {
+    padding: 40px 40px 0;
+
+    &-slide {
+        padding: 40px 100px;
+        // max-width: 420px;
+        max-height: 420px;
+        height: 420px;
+        position: relative;
+
+        &__first {
+            background: url('../img/main/slider.png') center/cover no-repeat;
+        }
+
+        &__two {
+            background: url('../img/main/slider2.png') center/cover no-repeat;
+        }
+
+        &__title {
+            font-family: 'Manrope' sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            display: flex;
+            align-items: center;
+            color: #171B24;
+            margin-bottom: 20px;
+
+        }
+
+        &__text {
+            font-family: 'Manrope' sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            display: flex;
+            align-items: center;
+            color: #454950;
+            margin-bottom: 100px;
+        }
+
+        &__more-btn {
+            width: 147px;
+            height: 48px;
+            display: flex;
+            bottom: 40px;
+            left: 100px;
+            background: #FCEC41;
+            color: #171B24;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            &:hover{
+                background: #2F323A;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        bottom: 40px;
+        right: 100px;
+        display: flex;
+        gap: 12px;
+
+        .home__prev,
+        .home__next {
+            width: 52px;
+            height: 52px;
+            color: #454950;
+            background: #FFFFFF;
+            border: 1px solid #D1D1D3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: .5s;
+            &:hover{
+                background: #2F323A;
+                color: #FFFFFF;
+                border: none;
+            }
+        }
+    }
+}

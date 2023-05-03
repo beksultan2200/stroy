@@ -1,0 +1,101 @@
+.bestsellers {
+    margin-bottom: 80px;
+    &__title {
+        font-family: 'Manrope' sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        /* or 44px */
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        /* Text/2F323A */
+
+        color: #2F323A;
+
+    }
+
+    &-col {
+        border: 1px solid #E8E9EA;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // gap: 16px;
+        &__img {
+            border-bottom: 1px solid #E8E9EA;
+            width: 100%;
+            
+        }
+
+        &-text-box {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 112px;
+            align-items: flex-start;
+
+            &__description {
+                margin: 0 10%;
+                font-family: 'Manrope' sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                /* or 24px */
+
+
+                /* Text/2F323A */
+
+                color: #2F323A;
+            }
+
+            &__price {
+                margin: 0 10%;
+                align-self: flex-start;
+                font-family: 'Manrope' sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                /* identical to box height, or 28px */
+
+
+                /* Text/171B24 */
+
+                color: #171B24;
+            }
+        }
+
+        &__btn {
+            margin: 16px;
+            width: 246px;
+            height: 48px;
+            background: #FCEC41;
+            border: none;
+            font-family: 'Manrope' sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 136%;
+            /* or 24px */
+
+
+            /* Text/171B24 */
+
+            color: #171B24;
+            transition: .5s;
+
+            &:hover {
+                background: #2F323A;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

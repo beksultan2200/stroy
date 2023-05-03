@@ -1,0 +1,131 @@
+.catalog {
+    &-home {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+
+        &-block {
+            background: url(../img/pages/catalog/homeImg.png);
+            max-width: 1360px;
+            width: 100%;
+            min-height: 232px;
+            padding: 40px 100px;
+
+            &-text-box {
+                max-height: 45px;
+                height: 100%;
+                padding-bottom: 20px;
+                display: flex;
+                gap: 7px;
+
+                &__a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #454950;
+                }
+            }
+
+            &__h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 120%;
+                color: #171B24;
+            }
+        }
+    }
+
+    &-tabs {
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+
+        &__caption {
+            display: flex;
+            align-self: center;
+            gap: 8px;
+            margin-bottom: 80px;
+            flex-wrap: wrap;
+            max-width: 1160px;
+            width: 100%;
+            min-height: 136px;
+            padding: 0;
+        }
+
+        &__btn {
+            padding: 8px 12px;
+            border: 1px solid #000;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 136%;
+            color: #171B24;
+
+            &_active {
+                background: #FBE303;
+                border: 1px solid #FBE303;
+
+            }
+        }
+
+        &__content {
+            display: none;
+            margin-bottom: 80px;
+
+            &_active {
+                display: block;
+            }
+        }
+    }
+
+    &-card {
+        &-top {
+            background: #F6F6F6;
+            max-width: 180px;
+            width: 100%;
+            min-height: 180px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 136%;
+                text-align: center;
+                color: #2F323A;
+                padding: 12px 0 8px;
+            }
+
+            &__img {
+                max-width: 180px;
+                max-height: 128px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &__items {
+            transition: .3s;
+
+            &:hover {
+                padding-left: 20px;
+                background: url(../img/right.png) left center/16px no-repeat;
+            }
+        }
+
+        // &__items{
+        //     padding-left: 20px;
+        //     background: url(https://www.pinclipart.com/picdir/big/565-5651037_check-mark-logo-png-clipart.png) left center/10px no-repeat;
+        // }
+    }
+}
